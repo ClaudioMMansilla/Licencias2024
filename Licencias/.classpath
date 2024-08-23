@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="libraries/commons/commons-beanutils-1.8.2.jar"/>
+	<classpathentry kind="lib" path="libraries/commons/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="libraries/commons/commons-collections4-4.4.jar"/>
+	<classpathentry kind="lib" path="libraries/commons/commons-digester-2.1.jar"/>
+	<classpathentry kind="lib" path="libraries/commons/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="libraries/connections/mssql-jdbc-12.2.0.jre8.jar"/>
+	<classpathentry kind="lib" path="libraries/connections/mysql-connector-java-8.0.19.jar"/>
+	<classpathentry kind="lib" path="libraries/others/charsets.jar"/>
+	<classpathentry kind="lib" path="libraries/others/groovy-all-2.0.1.jar"/>
+	<classpathentry kind="lib" path="libraries/others/jce.jar"/>
+	<classpathentry kind="lib" path="libraries/others/jdt-compiler.jar"/>
+	<classpathentry kind="lib" path="libraries/others/jsse.jar"/>
+	<classpathentry kind="lib" path="libraries/others/jxl-1.0.jar"/>
+	<classpathentry kind="lib" path="libraries/others/resources.jar"/>
+	<classpathentry kind="lib" path="libraries/others/rt.jar"/>
+	<classpathentry kind="lib" path="libraries/others/spring-beans-6.0.9.jar"/>
+	<classpathentry kind="lib" path="libraries/others/spring-core-6.0.9.jar"/>
+	<classpathentry kind="lib" path="libraries/jasper-report/itext-2.1.7.js4.jar"/>
+	<classpathentry kind="lib" path="libraries/jasper-report/itext-2.1.7.js4-sources.jar"/>
+	<classpathentry kind="lib" path="libraries/jasper-report/itextpdf-5.5.9.jar"/>
+	<classpathentry kind="lib" path="libraries/jasper-report/jasperreports-6.12.2.jar"/>
+	<classpathentry kind="lib" path="libraries/jasper-report/net.sf.fjep.fatjar_0.0.31.jar"/>
+	<classpathentry kind="lib" path="libraries/third-party/Atxy2k.jar"/>
+	<classpathentry kind="lib" path="libraries/third-party/jcalendar-1.4.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
