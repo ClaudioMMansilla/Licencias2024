@@ -16,7 +16,6 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumnModel;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
-
 import modelos.HojaDeRuta;
 import net.sf.jasperreports.engine.JRException;
 

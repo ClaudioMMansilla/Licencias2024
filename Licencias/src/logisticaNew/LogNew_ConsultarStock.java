@@ -28,6 +28,7 @@ import javax.swing.table.TableColumnModel;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
 
+import Servicios.Services;
 import net.sf.jasperreports.engine.JREmptyDataSource;
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperCompileManager;
@@ -273,7 +274,7 @@ public class LogNew_ConsultarStock extends javax.swing.JFrame {
     	//el fillmanager necesita argumento (objeto jasper, el parametro mapeado, conector tipo Connection)
     	JasperPrint jasperPrintWindow = JasperFillManager.fillReport(
 				reporte, parametros,
-				servicio.abrirConexion());
+				Servicios.Services.abrirConexionStatic());
   /*
     	JasperPrint jasperPrintWindow = JasperFillManager.fillReport(
 				"C:\\MyReports\\stock.jasper", null,
@@ -317,7 +318,7 @@ public class LogNew_ConsultarStock extends javax.swing.JFrame {
     	    columnModel.getColumn(3).setPreferredWidth(230);
 
     	    try {
-    	        cn = servicio.abrirConexion();
+    	        cn = Servicios.Services.abrirConexionStatic();
     	        stm = cn.createStatement();
     	        rs = stm.executeQuery("SELECT idProducto, producto, stock, marca FROM "+tablaProductos);
 
@@ -368,7 +369,7 @@ public class LogNew_ConsultarStock extends javax.swing.JFrame {
 	    columnModel.getColumn(3).setPreferredWidth(230);
 
 	    try {
-	        cn = servicio.abrirConexion();
+	        cn = Servicios.Services.abrirConexionStatic();
 	        stm = cn.createStatement();
 			PreparedStatement pstFinal = cn.prepareStatement(pst); //pstConsulta por tipo y fecha.-
 			pstFinal.setString(1, incognita);
@@ -417,7 +418,7 @@ public class LogNew_ConsultarStock extends javax.swing.JFrame {
 	    columnModel.getColumn(3).setPreferredWidth(230);
 
 	    try {
-	        cn = servicio.abrirConexion();
+	        cn = Servicios.Services.abrirConexionStatic();
 	        stm = cn.createStatement();
 			PreparedStatement pstFinal = cn.prepareStatement(pst); //pstConsulta por tipo y fecha.-
 			pstFinal.setString(1, incognita);
@@ -466,7 +467,7 @@ public class LogNew_ConsultarStock extends javax.swing.JFrame {
 	    columnModel.getColumn(3).setPreferredWidth(230);
 
 	    try {
-	        cn = servicio.abrirConexion();
+	        cn = Servicios.Services.abrirConexionStatic();
 	        stm = cn.createStatement();
 			PreparedStatement pstFinal = cn.prepareStatement(pst); //pstConsulta por tipo y fecha.-
 			pstFinal.setString(1, incognita);

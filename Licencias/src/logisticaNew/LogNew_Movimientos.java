@@ -26,6 +26,8 @@ import javax.swing.table.TableColumnModel;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
 
+import Servicios.Services;
+
 
 public class LogNew_Movimientos {
 

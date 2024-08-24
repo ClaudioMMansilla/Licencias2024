@@ -17,7 +17,7 @@ public class Reporte {
 		// descarga dentro del mismo proyecto
 		JasperPrint jasperPrint = JasperFillManager.fillReport(
 				"C:\\MyReports\\stock.jasper", null,
-				ConexionLH.Conectar());
+				Servicios.Services.abrirConexionStatic());
 		JRPdfExporter exp = new JRPdfExporter();
 		exp.setExporterInput(new SimpleExporterInput(jasperPrint));
 		exp.setExporterOutput(new SimpleOutputStreamExporterOutput("stock.pdf"));
@@ -29,7 +29,7 @@ public class Reporte {
 		// se muestra en una ventana aparte para su descarga
 		JasperPrint jasperPrintWindow = JasperFillManager.fillReport(
 				"C:\\MyReports\\stock.jasper", null,
-				ConexionLH.Conectar());
+				Servicios.Services.abrirConexionStatic());
 		JasperViewer jasperViewer = new JasperViewer(jasperPrintWindow);
 		jasperViewer.setVisible(true);
 		System.out.println("jasperviewer iterado");

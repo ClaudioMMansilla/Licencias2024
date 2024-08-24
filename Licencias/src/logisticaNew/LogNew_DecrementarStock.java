@@ -20,7 +20,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -37,11 +36,12 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumnModel;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
-
 import Atxy2k.CustomTextField.RestrictedTextField;
+import Servicios.Services;
 import envasadoUnificado2024.TextPrompt;
 import fecha.Fecha;
 import modelos.ArticuloPedido;
+import modelos.HojaDeRuta;
 import modelos.Pedido;
 import net.sf.jasperreports.engine.JREmptyDataSource;
 import net.sf.jasperreports.engine.JRException;
@@ -53,7 +53,7 @@ import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 import net.sf.jasperreports.engine.util.JRLoader;
 import net.sf.jasperreports.view.JasperViewer;
 import pedidos.Pedido_Controller;
-import reportes.HojaRuta;
+
 
 
 @SuppressWarnings("serial")
@@ -74,7 +74,7 @@ public class LogNew_DecrementarStock extends JFrame {
 	private int numero;
 	private char letra;
 	public String [] datos;
-	public List<HojaRuta> listItems;
+	public List<HojaDeRuta> listItems;
 	private File archivoSeleccionado;
 	public int rowsCounter;
 	private static String pathOrigen = null;

@@ -20,7 +20,7 @@ import javax.swing.JFrame;
 
 import Atxy2k.CustomTextField.RestrictedTextField;
 import conector.Conexion;
-import envasadoUnificado2024.Services;
+import Servicios.Services;
 
 public class Log_Frame4OutputStock extends javax.swing.JFrame {
 

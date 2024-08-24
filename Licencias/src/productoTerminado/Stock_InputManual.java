@@ -18,7 +18,8 @@ import javax.swing.JDialog;
 import javax.swing.JFrame;
 
 import Atxy2k.CustomTextField.RestrictedTextField;
-import LogisticaNew.Services;
+import Servicios.Services;
+
 
 
 

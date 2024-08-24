@@ -41,8 +41,8 @@ import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
 
 import conector.Conexion;
-import envasadoUnificado2024.Services;
-import reportes.HojaRuta;
+import Servicios.Services;
+import modelos.HojaDeRuta;
 
 
 @SuppressWarnings("serial")
@@ -60,7 +60,7 @@ public class LogNew_LoadFromCsv_old extends JFrame {
 	private int numero;
 	private char letra;
 	public String [] datos;
-	public List<HojaRuta> listItems;
+	public List<HojaDeRuta> listItems;
 	private File archivoSeleccionado;
 	public int rowsCounter;
 
@@ -247,10 +247,10 @@ public class LogNew_LoadFromCsv_old extends JFrame {
 			tablaLectura.setModel(modelo);
 
 			//List <PrintEnvasado> listItems= new ArrayList<PrintEnvasado>();
-			listItems= new ArrayList<HojaRuta>();
+			listItems= new ArrayList<HojaDeRuta>();
 
 			for (int i = 0; i<tablaLectura.getRowCount(); i++) {
-				HojaRuta listado = new HojaRuta(
+				HojaDeRuta listado = new HojaDeRuta(
 						tablaLectura.getValueAt(i, 0).toString(),
 						tablaLectura.getValueAt(i, 1).toString(),
 						tablaLectura.getValueAt(i, 2).toString(),
