@@ -12,8 +12,7 @@ import javax.swing.JPanel;
 import javax.swing.WindowConstants;
 import javax.swing.border.EmptyBorder;
 
-import productoTerminado.Stock_InputBudines;
-import productoTerminado.Stock_InputPDulce;
+import productoTerminado.Stock_Input;
 
 
 public class ChooseView_ingresoEgreso extends JFrame {
@@ -63,7 +62,8 @@ public class ChooseView_ingresoEgreso extends JFrame {
         buttonA.addActionListener(new ActionListener() {
             @Override
 			public void actionPerformed(ActionEvent e) {
-            	new Stock_InputBudines(userSes).setVisible(true);
+//            	new Stock_InputBudines(userSes).setVisible(true);
+            	new Stock_Input(userSes,0).setVisible(true);
             	dispose();
             }
         });
@@ -74,7 +74,8 @@ public class ChooseView_ingresoEgreso extends JFrame {
         buttonB.addActionListener(new ActionListener() {
             @Override
 			public void actionPerformed(ActionEvent e) {
-            	new Stock_InputPDulce(userSes).setVisible(true);
+//            	new Stock_InputPDulce(userSes).setVisible(true);
+            	new Stock_Input(userSes,1).setVisible(true);
             	dispose();
             }
         });

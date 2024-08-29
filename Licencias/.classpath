@@ -23,12 +23,11 @@
 	<classpathentry kind="lib" path="libraries/others/rt.jar"/>
 	<classpathentry kind="lib" path="libraries/others/spring-beans-6.0.9.jar"/>
 	<classpathentry kind="lib" path="libraries/others/spring-core-6.0.9.jar"/>
-	<classpathentry kind="lib" path="libraries/jasper-report/itext-2.1.7.js4.jar"/>
-	<classpathentry kind="lib" path="libraries/jasper-report/itext-2.1.7.js4-sources.jar"/>
-	<classpathentry kind="lib" path="libraries/jasper-report/itextpdf-5.5.9.jar"/>
-	<classpathentry kind="lib" path="libraries/jasper-report/jasperreports-6.12.2.jar"/>
-	<classpathentry kind="lib" path="libraries/jasper-report/net.sf.fjep.fatjar_0.0.31.jar"/>
+	<classpathentry kind="lib" path="libraries/others/net.sf.fjep.fatjar_0.0.31.jar"/>
 	<classpathentry kind="lib" path="libraries/third-party/Atxy2k.jar"/>
 	<classpathentry kind="lib" path="libraries/third-party/jcalendar-1.4.jar"/>
+	<classpathentry kind="lib" path="libraries/jasper-report/itextpdf-5.5.9.jar"/>
+	<classpathentry kind="lib" path="libraries/jasper-report/itext-2.1.7.jar"/>
+	<classpathentry kind="lib" path="libraries/jasper-report/jasperreports-5.6.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

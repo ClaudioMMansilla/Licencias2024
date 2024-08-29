@@ -22,13 +22,13 @@ public class Reports {
 
 
 	public void reportEnvasado(Envasado_Model model) {
+		
 
 		if(model != null) {
 	    	//indico la ruta del objeto a cargar
 	    	JasperReport reporte;
 			try {
 				reporte = (JasperReport) JRLoader.loadObjectFromFile("C:\\MyReports\\rotuloEnvasado.jasper");
-
 
 		    	//creo el mapeo para insertar el par�metro que sera enviado a Jasper Report
 		    	Map<String, Object> parametros = new HashMap<>();
@@ -58,9 +58,15 @@ public class Reports {
 
 				// primero genero pdf y luego proceso a disparar impresion en papel
 				JasperViewer jasperViewer = new JasperViewer(jasperPrint, false); // false = hide_on_close
-				jasperViewer.setVisible(false);
-				JasperPrintManager.printReport( jasperPrint, false); // false = dispara impresion a impresora por default
-																    //  true = abre ventana dialogo
+				jasperViewer.setVisible(true);
+				
+				try {
+					JasperPrintManager.printReport( jasperPrint, false ); // false = dispara impresion a impresora por default
+				    //  true = abre ventana dialogo
+				} catch (Exception e){
+		   			JOptionPane.showMessageDialog(null,"Error imprimiento reporte  \n\n "+ e);
+				}
+
 			} catch (JRException e) {
 				e.printStackTrace();
 	   			JOptionPane.showMessageDialog(null,"Error generando reporte  \n\n "

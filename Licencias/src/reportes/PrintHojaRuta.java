@@ -66,9 +66,10 @@ public class PrintHojaRuta {
 				if(!jasperPrint.getPages().isEmpty()) {
 					jasperViewer.setVisible(true);
 				}
+				
 				JasperPrintManager.printReport( jasperPrint, true); // false = dispara impresion a impresora por default
 																    //  true = abre ventana dialogo
-
+				
 
 			} catch (JRException e) {
 				e.printStackTrace();

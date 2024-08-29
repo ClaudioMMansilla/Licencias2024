@@ -20,6 +20,7 @@ public class Services {
 	public static String url_reg_guiastransporte = "pruebas_2022.reg_guiastransporte";
 	public static String url_contadorEnvasadoPandulce = "pruebas_2022.contador_env_input_pdulces";
 	public static String url_contadorEnvasadoBudines = "pruebas_2022.contador_env_input_budines";
+	public static String [] tablaInputEnvasado = {"pruebas_2022.env_input_budines", "pruebas_2022.env_input_pdulces"};
 	//testing.productos
 
 	public String getDbProductos() {
